@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html lang="en">
+<head>
+    <!-- for language -->
+    <meta charset="UTF-8">
+    <!-- for ie -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- for responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="../css/all.css">  
+    <!-- google fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Cairo"  rel="stylesheet" type="text/css">
+    <html data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">    
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- slick links -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+    <title>dryve</title>
+    <!-- <link rel="icon" href="../images/Path 4.svg" type="image/icon type"> -->
+</head>
+<body>
+    <!-- start navbar code  -->  
+    <nav class="navbar navbar-expand-lg navbar-light d-block " id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><img src="../images/Background@2x.png"/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                    <a class="nav-link active" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rent_car</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">our app</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">why us</a>
+                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="arab">اللغة العربية</a>
+                    </li>
+                </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="signup.html">Sign Up</a></li>
+                <li class="nav-item"><a class="nav-link red" href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end navbar code -->
+    <!-- start search -->
+    <section id="search">
+        <div class="container d-flex justify-content-center">
+            <form action="#" method="post" class="d-lg-flex ">
+            <div class="d-lg-flex  d-md-flex d-ms-block">
+                <div class="text d-flex location  mt-2">
+                    <label for="tel" class="justify-content-center"><i class="fas fa-map-marker-alt"></i></label>
+                    <input type="location" id="location"
+                    name="location" value="Zamalek Cinema, Shagaret Al Dor, Abu Al Feda, Zamalek">
+                    <span><i class="fas fa-pen"></i></span>
+                </div>
+                <div class="text d-flex  mt-2">
+                    <label for="password" class="justify-content-center"><i class="fas fa-calendar-day"></i></label>
+                    <input type="datetime-local" id="start-time"
+                    name="start-time" value="2020-12-12T19:30">
+                    
+                </div>
+            </div>
+            <div class="d-lg-flex d-md-flex d-ms-block justify-content-center">
+                <div class="text d-flex  mt-2">
+                    <label for="password" class="justify-content-center"><i class="fas fa-calendar-day"></i></label>
+                    <input type="datetime-local" id="end-time"
+                    name="end-time" value="2020-12-12T19:30">
+                    
+                </div>
+                <div class="submit d-flex justify-content-center  mt-2">
+                    <input type="submit" value="search" >
+                </div>
+            </div>
+            </form>
+        </div>
+    </section>
+    <!-- end search -->
+    <!-- start filter -->
+    <section class="container row" id="filter">
+        <div class="col-lg-3 pt-4 pl-3 pr-3 col-md-4" id="first">
+            <form action="#">
+                <div class="d-flex justify-content-between " >
+                    <h5 class="mb-3">Filters</h5>
+                    <input type="reset" value="Clear all" class="mb-3">
+                </div> 
+                <div id="form">
+                    <div class="d-flex justify-content-between  mt-3">
+                        <h6 class="font-weight-bolder">Price range</h6>
+                        <i class="fa fa-angle-up" aria-hidden="true"  data-toggle="collapse" data-target="#demo"></i>
+                    </div>
+                    <div id="demo" class="collapse" >
+                        <div class="slidecontainer ml-3 pt-3">
+                            <!-- <input type="range" min="0" max="100" value="40" /> -->
+                            <section class="mb-4">
+                                <div>
+                                    <div class="col-rt-12">
+                                        <div class="Scriptcontent">             
+                                            <!-- Range Slider HTML -->
+                                        <div slider id="slider-distance">
+                                    <div>
+                                    <div inverse-left style="width:70%;"></div>
+                                    <div inverse-right style="width:70%;"></div>
+                                    <div range style="left:30%;right:40%;"></div>
+                                    <span thumb style="left:30%;"></span>
+                                    <span thumb style="left:60%;"></span>
+                                    <div sign style="left:30%;">
+                                        <span id="value">30</span>
+                                    </div>
+                                    <div sign style="left:60%;">
+                                        <span id="value">60</span>
+                                    </div>
+                                </div>
+                                <input type="range" tabindex="0" value="30" max="100" min="0" step="1" oninput="
+                                this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
+                                var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+                                var children = this.parentNode.childNodes[1].childNodes;
+                                children[1].style.width=value+'%';
+                                children[5].style.left=value+'%';
+                                children[7].style.left=value+'%';children[11].style.left=value+'%';
+                                children[11].childNodes[1].innerHTML=this.value;" />
+                                
+                                <input type="range" tabindex="0" value="60" max="100" min="0" step="1" oninput="
+                                this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
+                                var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+                                var children = this.parentNode.childNodes[1].childNodes;
+                                children[3].style.width=(100-value)+'%';
+                                children[5].style.right=(100-value)+'%';
+                                children[9].style.left=value+'%';children[13].style.left=value+'%';
+                                children[13].childNodes[1].innerHTML=this.value;" />
+                                
+                                </section>    
+                        </div>                          
+                    </div>                  
+                    <div class="d-flex justify-content-between mt-4">
+                        <h6 class="font-weight-bolder mb-4">Transmission</h6>  
+                        <i class="fa fa-angle-up" aria-hidden="true"  data-toggle="collapse" data-target="#demo2"></i>
+                    </div>
+                    <div id="demo2" class="collapse" >
+                        <div class="d-flex mt-3">
+                            <div>
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                <label for="vehicle1"> Manual</label><br>
+                            </div>
+                            <div class="ml-5">
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                <label for="vehicle1"> Automatic</label><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between  mt-4">
+                        <h6 class="font-weight-bolder mb-3">Car year</h6>
+                        <i class="fa fa-angle-up" aria-hidden="true"  data-toggle="collapse" data-target="#demo3"></i>
+                    </div>
+                    <div id="demo3" class="collapse" >
+                        <div class="slidecontainer ml-3 pt-3">
+                            <!-- <input type="range" min="0" max="100" value="40" /> -->
+                            <section  class="mb-4">
+                                <div class="rt-container">
+                                    <div>
+                                        <div class="Scriptcontent">             
+                                            <!-- Range Slider HTML -->
+                                        <div slider id="slider-distance">
+                                    <div>
+                                    <div inverse-left style="width:70%;"></div>
+                                    <div inverse-right style="width:70%;"></div>
+                                    <div range style="left:0%;right:40%;"></div>
+                                    <span thumb style="left:0%;"></span>
+                                    <span thumb style="left:60%;"></span>
+                                    <div sign style="left:0%;">
+                                        <span id="value">0</span>
+                                    </div>
+                                    <div sign style="left:60%;">
+                                        <span id="value">60</span>
+                                    </div>
+                                </div>
+                                <input type="range" tabindex="0" value="0" max="100" min="0" step="1" oninput="
+                                this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
+                                var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+                                var children = this.parentNode.childNodes[1].childNodes;
+                                children[1].style.width=value+'%';
+                                children[5].style.left=value+'%';
+                                children[7].style.left=value+'%';children[11].style.left=value+'%';
+                                children[11].childNodes[1].innerHTML=this.value;" />
+                                
+                                <input type="range" tabindex="0" value="60" max="100" min="0" step="1" oninput="
+                                this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
+                                var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+                                var children = this.parentNode.childNodes[1].childNodes;
+                                children[3].style.width=(100-value)+'%';
+                                children[5].style.right=(100-value)+'%';
+                                children[9].style.left=value+'%';children[13].style.left=value+'%';
+                                children[13].childNodes[1].innerHTML=this.value;" />
+                                </section>
+                        </div>                          
+                    </div> 
+                    </div> 
+                    <div class="d-flex justify-content-between  mt-4 mb-2">
+                        <h6 class="font-weight-bolder">Car make & model</h6>
+                        <i class="fa fa-angle-up" aria-hidden="true"  data-toggle="collapse" data-target="#demo4"></i>
+                    </div> 
+                    <div id="demo4" class="collapse" >
+                        <select name="car" id="car" class="px-1  mb-2">
+                            <option value="Chevrolet">Chevrolet</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select> 
+                        <select name="car" id="car" class="px-1  mb-2">
+                            <option value="Capticva">Chevrolet</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between mt-4">
+                        <h6 class="font-weight-bolder">Transmission</h6>  
+                        <i class="fa fa-angle-up" aria-hidden="true"  data-toggle="collapse" data-target="#demo5"></i>
+                    </div>
+                    <div id="demo5" class="collapse" >
+                        <div class="d-flex  mt-3">
+                            <div>
+                                <input type="checkbox" id="Sedian" name="Sedian" value="Sedian">
+                                <label for="vehicle1">Sedian</label><br>
+                                <input type="checkbox" id="Sedian" name="Sedian" value="Sedian">
+                                <label for="vehicle1">Sedian</label><br>
+                                <input type="checkbox" id="Sedian" name="Sedian" value="Sedian">
+                                <label for="vehicle1">Sedian</label><br>
+                            </div>
+                            <div class="ml-5">
+                                <input type="checkbox" id="Hatchback" name="Hatchback" value="Hatchback">
+                                <label for="Hatchback"> Hatchback</label><br>
+                                <input type="checkbox" id="Sedian" name="Sedian" value="Sedian">
+                                <label for="vehicle1">Sedian</label><br>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="d-flex justify-content-between mt-4">
+                        <h6 class="font-weight-bolder mb-3">Rating</h6>  
+                        <i class="fa fa-angle-up" aria-hidden="true"  data-toggle="collapse" data-target="#demo6"></i>
+                    </div>
+                    <div id="demo6" class="collapse">
+                        <input type="radio" id="5" name="rate" value="5">
+                        <label for="5"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i> <i class="fas fa-star"></i></label><br>
+                        <input type="radio" id="4" name="rate" value="4">
+                        <label for="4"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                            <i class="fas fa-star "></i> <i class="far fa-star"></i></label><br>
+                        <input type="radio" id="3" name="rate" value="3">
+                        <label for="vehicle1"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i><i class="far fa-star"></i></label><br>
+                        <input type="radio" id="2" name="rate" value="2">
+                        <label for="vehicle1"><i class="fas fa-star"></i> <i class="fas fa-star">
+                        </i> <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></label><br>
+                        <input type="radio" id="1" name="rate" value="1">
+                        <label for="vehicle1"><i class="fas fa-star"></i> <i class="far fa-star"></i><i class="far fa-star"></i>
+                            <i class="far fa-star"></i><i class="far fa-star"></i></label><br>
+                    </div> 
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-9 col-md-8">
+            <div class="d-lg-flex justify-content-between mt-5"id="text1"> 
+                <p><span>We found </span>22 car for you</p>
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex">
+                        <P class="mr-2">List</P>
+                        <label class="switch d-flex">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                        <P class="ml-2">Map</P>
+                    </div>
+                    <div class="d-md-flex">
+                        <p class="pl-3 pr-2 font-weight-bolder">Sort by :</p>
+                        <select name="car" id="car" class="px-1">
+                            <option value="RECOMMENDED">RECOMMENDED</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+                </div>
+            </div>             
+            <div class="row" id="sec_car">
+                <div class="col-lg-4 col-md-6">
+                    <img src="../images/1Img@2x.png">
+                    <div id="text">
+                        <div class="rate">
+                            <P><span>2021</span><i class="fas fa-star">4,5</i></P>
+                            <div class="d-flex justify-content-between">
+                                <p class="font-weight-bolder ">Audi S4 Premium Plus</p>
+                                <p class="font-weight-bolder ">1400 <br><span>EGP/day</span></p>
+                            </div>
+                        </div>
+                        <div class="d-flex car mb-3">
+                            <i class="fas fa-car-alt"> 9 Booking </i>
+                            <i class="fas fa-shipping-fast"> Delivery available </i>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <a href="details.html">More details</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <img src="../images/2Img@2x.png">
+                    <div id="text">
+                        <div class="rate">
+                            <P><span>2021</span><i class="fas fa-star">4,5</i></P>
+                            <div class="d-flex justify-content-between">
+                                <p class="font-weight-bolder ">Audi S4 Premium Plus</p>
+                                <p class="font-weight-bolder ">1400 <br><span>EGP/day</span></p>
+                            </div>
+                        </div>
+                        <div class="d-flex car mb-3">
+                            <i class="fas fa-car-alt"> 9 Booking </i>
+                            <i class="fas fa-shipping-fast"> Delivery available </i>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <a href="#">More details</a>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6">
+                    <img src="../images/3Img@2x.png">
+                    <div id="text">
+                        <div class="rate">
+                            <P><span>2021</span><i class="fas fa-star">4,5</i></P>
+                            <div class="d-flex justify-content-between">
+                                <p class="font-weight-bolder ">Audi S4 Premium Plus</p>
+                                <p class="font-weight-bolder ">1400 <br><span>EGP/day</span></p>
+                            </div>
+                        </div>
+                        <div class="d-flex car mb-3">
+                            <i class="fas fa-car-alt"> 9 Booking </i>
+                            <i class="fas fa-shipping-fast"> Delivery available </i>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <a href="#">More details</a>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6">
+                    <img src="../images/1Img@2x.png">
+                    <div id="text">
+                        <div class="rate">
+                            <P><span>2021</span><i class="fas fa-star">4,5</i></P>
+                            <div class="d-flex justify-content-between">
+                                <p class="font-weight-bolder ">Audi S4 Premium Plus</p>
+                                <p class="font-weight-bolder ">1400 <br><span>EGP/day</span></p>
+                            </div>
+                        </div>
+                        <div class="d-flex car mb-3">
+                            <i class="fas fa-car-alt"> 9 Booking </i>
+                            <i class="fas fa-shipping-fast"> Delivery available </i>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <a href="#">More details</a>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6">
+                    <img src="../images/2Img@2x.png">
+                    <div id="text">
+                        <div class="rate">
+                            <P><span>2021</span><i class="fas fa-star">4,5</i></P>
+                            <div class="d-flex justify-content-between">
+                                <p class="font-weight-bolder ">Audi S4 Premium Plus</p>
+                                <p class="font-weight-bolder ">1400 <br><span>EGP/day</span></p>
+                            </div>
+                        </div>
+                        <div class="d-flex car mb-3">
+                            <i class="fas fa-car-alt"> 9 Booking </i>
+                            <i class="fas fa-shipping-fast"> Delivery available </i>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <a href="#">More details</a>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6">
+                    <img src="../images/3Img@2x.png">
+                    <div id="text">
+                        <div class="rate">
+                            <P><span>2021</span><i class="fas fa-star">4,5</i></P>
+                            <div class="d-flex justify-content-between">
+                                <p class="font-weight-bolder ">Audi S4 Premium Plus</p>
+                                <p class="font-weight-bolder ">1400 <br><span>EGP/day</span></p>
+                            </div>
+                        </div>
+                        <div class="d-flex car mb-3">
+                            <i class="fas fa-car-alt"> 9 Booking </i>
+                            <i class="fas fa-shipping-fast"> Delivery available </i>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <a href="#">More details</a>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6">
+                    <img src="../images/1Img@2x.png">
+                    <div id="text">
+                        <div class="rate">
+                            <P><span>2021</span><i class="fas fa-star">4,5</i></P>
+                            <div class="d-flex justify-content-between">
+                                <p class="font-weight-bolder ">Audi S4 Premium Plus</p>
+                                <p class="font-weight-bolder ">1400 <br><span>EGP/day</span></p>
+                            </div>
+                        </div>
+                        <div class="d-flex car mb-3">
+                            <i class="fas fa-car-alt"> 9 Booking </i>
+                            <i class="fas fa-shipping-fast"> Delivery available </i>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <a href="#">More details</a>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6">
+                    <img src="../images/2Img@2x.png">
+                    <div id="text">
+                        <div class="rate">
+                            <P><span>2021</span><i class="fas fa-star">4,5</i></P>
+                            <div class="d-flex justify-content-between">
+                                <p class="font-weight-bolder ">Audi S4 Premium Plus</p>
+                                <p class="font-weight-bolder ">1400 <br><span>EGP/day</span></p>
+                            </div>
+                        </div>
+                        <div class="d-flex car mb-3">
+                            <i class="fas fa-car-alt"> 9 Booking </i>
+                            <i class="fas fa-shipping-fast"> Delivery available </i>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <a href="#">More details</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <img src="../images/3Img@2x.png">
+                    <div id="text">
+                        <div class="rate">
+                            <P><span>2021</span><i class="fas fa-star">4,5</i></P>
+                            <div class="d-flex justify-content-between">
+                                <p class="font-weight-bolder ">Audi S4 Premium Plus</p>
+                                <p class="font-weight-bolder ">1400 <br><span>EGP/day</span></p>
+                            </div>
+                        </div>
+                        <div class="d-flex car mb-3">
+                            <i class="fas fa-car-alt"> 9 Booking </i>
+                            <i class="fas fa-shipping-fast"> Delivery available </i>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <a href="#">More details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-md-flex justify-content-between"id="text2">
+                <div class="d-flex">
+                    <P class="font-weight-bolder mr-2">Cars/page </P>
+                    <select name="car" id="car" class="px-1">
+                        <option value="10">10</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select> 
+                </div>
+                <div class="d-flex justify-content-between" id="slide">
+                    <P> <i class="fa fa-chevron-left pr-3" aria-hidden="true" ></i>Prev</P>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <P>Next<i class="fa fa-chevron-right pl-3" aria-hidden="true"></i></P>
+                </div>
+            </div>      
+        </div>
+    </div>
+    <!-- end cars -->
+    <!-- start section footer -->
+    <footer class="container">
+        <div id="text">
+            <h1 class="font-weight-bold">Get the app now</h1>
+            <p>The easiest and safest way to rent your car in Egypt. Book from awide</p>
+            <div class="d-flex justify-content-center">
+                <a href="#"><img src="../images/5847e95fcef1014c0b5e4822.png"></a>
+                <a href="#"><img src="../images/download2.png"></a>
+            </div>
+        </div>
+        <div class="d-md-flex justify-content-around"id="copy-right">
+            <P>© 2021 Drive, All Rights Reserved</P>
+            <div>
+                <a href="#">Support</a> 
+                <a href="#">Privacy Policy</a> 
+                <a href="#">Terms and Conditions</a>  
+            </div>
+        </div>
+        
+    </footer>
+    <!-- end section footer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
+    <!-- marquee link -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.5.0/jquery.marquee.js" integrity="sha256-s1OzWKVKvieWrP3uQ4cPKIdipmDVyUFgDErJ2ko3mtY=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../js/plugin.js"></script>
+    <!-- for check for width,height -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- slick link -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="../js/slick.js"></script>
+    <!-- bootstarp link -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script>
+        $('.collapse').collapse({
+            show: true
+        })
+    </script>
+</body>
+</html>
